@@ -43,10 +43,6 @@ export default function Home() {
         {customerElements}
     </div>    
 
-    <div className="sectionSplit">
-        <h2><b>Contact Us</b></h2>
-    </div>
-
     <Contact />
     <Footer />
 

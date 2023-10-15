@@ -30,6 +30,11 @@ export default function Contact() {
   return (
 
     <div>
+
+        <div className="sectionSplit">
+                <h2><b>Contact Us</b></h2>
+        </div>
+        
          <form className='form' method='post' onSubmit={handleSubmit}>  
             <div className="inputs1">
                 <input className='inputs' 
