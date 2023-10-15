@@ -10,6 +10,7 @@ import OCC from './OCC'
 import Sumitomo from './Sumitomo'
 import TrendNetworks from './TrendNetworks'
 import GigOptics from './GigOptics'
+import TCFlogo from '../public/images/TCF-MainLogo.png'
 
 export default function App() {
   return (
@@ -48,7 +49,7 @@ export default function App() {
     </div>    
 
     <div className="mainLogo">
-        <img src="./public/images/TCF-MainLogo.png" alt="TCF-MainLogo"></img>
+        <img src={TCFlogo} alt="TCF-MainLogo"></img>
 
         <h1>The Connectivity Firm, inc</h1>
     </div>
