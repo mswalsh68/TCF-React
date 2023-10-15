@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import formBackground from '../public/images/how-does-the-internet-work-hero1559004884280.jpg'
 
 export default function Contact() {
 

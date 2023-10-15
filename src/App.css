@@ -96,7 +96,7 @@
 .form{
   display: grid;
   text-align: center;
-  background-image: url('./public/images/how-does-the-internet-work-hero1559004884280.jpg');
+  background-image: url('../public/images/how-does-the-internet-work-hero1559004884280.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   padding: 1rem;
