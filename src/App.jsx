@@ -48,7 +48,7 @@ export default function App() {
     </div>    
 
     <div className="mainLogo">
-        <img src="../public/images/TCF-MainLogo.png" alt="TCF-MainLogo"></img>
+        <img src="./public/images/TCF-MainLogo.png" alt="TCF-MainLogo"></img>
 
         <h1>The Connectivity Firm, inc</h1>
     </div>
