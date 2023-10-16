@@ -1,8 +1,11 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import './App.css'
-import formBackground from '../public/images/how-does-the-internet-work-hero1559004884280.jpg'
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
+
+    const form = useRef();
+
 
     const [formData, setFormData] = React.useState({
             name:"", 
@@ -24,6 +27,12 @@ export default function Contact() {
     function handleSubmit(){
         event.preventDefault();
         console.log(formData);
+        emailjs.sendForm('service_s8b4vep', 'template_7xqk5y2', form.current, '-5EntjEEuC2PrJWO4')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
     }
     
 
@@ -35,7 +44,7 @@ export default function Contact() {
                 <h2><b>Contact Us</b></h2>
         </div>
         
-         <form className='form' method='post' onSubmit={handleSubmit} action="mailto:mswalsh68@gmail.com">  
+         <form ref={form} className='form' onSubmit={handleSubmit}>  
             <div className="inputs1">
                 <input className='inputs' 
                     type="text"
@@ -63,7 +72,7 @@ export default function Contact() {
                     <textarea className='inputs' 
                         cols="30" 
                         rows="10"
-                        placeholder="How can we help you"
+                        placeholder="How can we help you. What products or services are you interested in?"
                         onChange={handleChange}
                         name="comments"
                         value={formData.comments}
@@ -71,8 +80,7 @@ export default function Contact() {
 
             </div>
 
-             <button className='send'>Submit</button>
-        
+            <input type="submit" value="Send" className='send'/>        
         </form>
     </div>   
     )
