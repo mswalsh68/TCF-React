@@ -11,56 +11,72 @@ import Sumitomo from './Sumitomo'
 import TrendNetworks from './TrendNetworks'
 import GigOptics from './GigOptics'
 import TCFlogo from '../public/images/TCF-MainLogo.png'
+import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
 
 export default function App() {
   return (
 
     <div>
-      
-    <div className="navbar navbar-expand-md">
+
+    <Navbar className="navbar" expand="md">
         <div className="container">
-            
-            <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation">
+
+            <Navbar.Toggle  data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation">
                     <span className="navbar-toggler-icon"></span>
-            </button>
-            
-            <div className="collapse navbar-collapse" id="nav">
-                <ul className="navbar-nav">
-                    <li className="nav-item">
-                        <Link to='/' href="" class="nav-link">Home</Link>
-                    </li>
+            </Navbar.Toggle>
 
-                      <li className="nav-item">  
-                        <Link to='/WhereToBuy' className="nav-link"> Where to Buy </Link>
-                    </li>
+            <Navbar.Collapse  id="nav">
+                <Nav >
+                    <Nav.Link >
+                        <Link to='/' >Home</Link>
+                    </Nav.Link>
 
-                    <li className="nav-item">
-                        <Link to='/About' className="nav-link">About</ Link>
-                    </li>
+                    <NavDropdown  title="Manufacturers"> 
+                        <NavDropdown.Item >
+                                <Link to='/OCC'> OCC </Link>
+                        </NavDropdown.Item>
+                        <NavDropdown.Item >
+                                <Link to='/Sumitomo'> Sumitomo </Link>
+                        </NavDropdown.Item>
+                        <NavDropdown.Item >
+                                <Link to='/TrendNetworks'> Trend Networks </Link>
+                        </NavDropdown.Item>
+                        <NavDropdown.Item >
+                                <Link to='/GigOptics'> Gig Optics </Link>
+                        </NavDropdown.Item>
+                    </NavDropdown>
 
-                    <li className="nav-item">
-                        <Link to='/MarketsServed' className="nav-link">Markets Served</Link>
-                    </li>
-                </ul>
-            </div>  
+                      <Nav.Link>
+                        <Link to='/WhereToBuy'> Where to Buy </Link>
+                    </Nav.Link>
 
-        </div> 
+                    <Nav.Link>
+                        <Link to='/About'>About</ Link>
+                    </Nav.Link>
 
-    </div>    
+                    <Nav.Link>
+                        <Link to='/MarketsServed'>Markets Served</Link>
+                    </Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
+
+        </div>
+
+    </Navbar>
 
     <div className="mainLogo">
         <img src={TCFlogo} alt="TCF-MainLogo"></img>
 
         <h1>The Connectivity Firm, inc</h1>
     </div>
-        
+
     <div className="headline">
         <div className="tagline">
         <h5><b>Since 2001, The Connectivity Firm inc has been supplying the low voltage communication markets with world class fiber, copper cable, and connectivity product solutions to all communication markets.</b></h5></div>
     </div>
 
 
-  
+
 
 
     <Routes>
@@ -75,6 +91,6 @@ export default function App() {
         </Routes>
 
 
-  </div>  
+  </div>
   )
 }

@@ -35,7 +35,7 @@ export default function Contact() {
                 <h2><b>Contact Us</b></h2>
         </div>
         
-         <form className='form' method='post' onSubmit={handleSubmit}>  
+         <form className='form' method='post' onSubmit={handleSubmit} action="mailto:mswalsh68@gmail.com">  
             <div className="inputs1">
                 <input className='inputs' 
                     type="text"
