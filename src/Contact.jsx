@@ -1,40 +1,23 @@
 import React, {useRef} from 'react'
 import './App.css'
 import emailjs from '@emailjs/browser';
+import {Routes, Route, Link} from 'react-router-dom'
+import ThankYou from './ThankYou';
 
 export default function Contact() {
 
     const form = useRef();
 
-
-    const [formData, setFormData] = React.useState({
-            name:"", 
-            email:"",
-            company:"",
-            comments:"",
-
-        }
-    )
-    
-    function handleChange(event){
-        const {name, value, type, checked} = event.target
-        setFormData(prevFormData => ({
-            ...prevFormData,
-            [name]: type === "checkbox"? checked : value
-        }))
+    function handleSubmit(e){
+        e.preventDefault();
+ 
+    emailjs.sendForm('service_s8b4vep', 'template_7xqk5y2', form.current, '-5EntjEEuC2PrJWO4')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });e.target.reset()
     }
-    
-    function handleSubmit(){
-        event.preventDefault();
-        console.log(formData);
-        emailjs.sendForm('service_s8b4vep', 'template_7xqk5y2', form.current, '-5EntjEEuC2PrJWO4')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-    }
-    
 
   return (
 
@@ -49,39 +32,37 @@ export default function Contact() {
                 <input className='inputs' 
                     type="text"
                     placeholder="Name"
-                    onChange={handleChange}
                     name="name"
-                    value={formData.name}
                 />
                 <input className='inputs'
                     type="email"
                     placeholder="Email"
-                    onChange={handleChange}
                     name="email"
-                    value={formData.email}
                 />
                 <input className='inputs'
                     type="text"
                     placeholder="Company"
-                    onChange={handleChange}
                     name="company"
-                    value={formData.company}
                 />
              </div>
              <div className='inputs2'>
                     <textarea className='inputs' 
                         cols="30" 
                         rows="10"
-                        placeholder="How can we help you. What products or services are you interested in?"
-                        onChange={handleChange}
+                        placeholder="How can we help you.cts or services are you interested in?"
                         name="comments"
-                        value={formData.comments}
                     />
 
             </div>
 
-            <button type="submit" value="Send" className='send'> Submit</button>       
+            <button type="submit" value="Send" className='send'>Submit
+                <Link to='/ThankYou'></Link>
+            </button>       
         </form>
+
+        <Routes>
+            <Route path='/' element={<ThankYou />} />
+        </Routes>
     </div>   
     )
 }
