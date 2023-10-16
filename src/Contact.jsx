@@ -80,7 +80,7 @@ export default function Contact() {
 
             </div>
 
-            <input type="submit" value="Send" className='send'/>        
+            <button type="submit" value="Send" className='send'> Submit</button>       
         </form>
     </div>   
     )
