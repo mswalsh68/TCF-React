@@ -49,7 +49,7 @@ export default function Contact() {
                     <textarea className='inputs' 
                         cols="30" 
                         rows="10"
-                        placeholder="How can we help you.cts or services are you interested in?"
+                        placeholder="How can we help you. What products or services are you interested in?"
                         name="comments"
                     />
 
