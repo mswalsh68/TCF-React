@@ -9,7 +9,7 @@ import MARS from '../public/images/OCC MARS.png'
 export default[
     {
         id: 1,
-        title: "Optical Cable Corporation",
+        title: "D-Series Fiber",
         coverImg:  DXcable,
         website: 'https://www.occfiber.com/product/dx-series-distribution-plenum-indoor-outdoor-rated-cables/',
     },
