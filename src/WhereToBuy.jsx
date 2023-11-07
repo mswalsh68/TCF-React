@@ -3,8 +3,6 @@ import './App.css'
 import DistributorData from './DistributorData'
 import Distributors from './Distributors'
 import Contact from './Contact'
-
-
 import Footer from './Footer'
 
 export default function Home() {
