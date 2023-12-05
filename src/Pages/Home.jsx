@@ -1,11 +1,9 @@
 import React from 'react'
-import './App.css'
-import ManufacturerData from './ManufacturerData'
+import '../App.css'
+import ManufacturerData from '../Data/ManufacturerData'
 import Manufacturers from './Manufacturers'
-import Customers from './Customers'
-import CustomerData from './CustomerData'
-import Footer from './Footer'
-import Contact from './Contact'
+import Customers from '../Components/Customers'
+import CustomerData from '../Data/CustomerData'
 
 export default function Home() {
 
@@ -43,8 +41,6 @@ export default function Home() {
         {customerElements}
     </div>    
 
-    <Contact />
-    <Footer />
 
     </div>
   )

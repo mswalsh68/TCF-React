@@ -1,9 +1,7 @@
 import React from 'react'
-import './App.css'
-import Contact from './Contact'
-import Footer from './Footer'
-import OCCData from './OCCData';
-import Card from './Card'
+import '../App.css'
+import OCCData from '../Data/OCCData';
+import Card from '../Components/Card'
 
 
 export default function OCC() {
@@ -25,8 +23,6 @@ export default function OCC() {
           {featuredProducts}
         </div>
 
-        <Contact />
-        <Footer />
     </div>
   )
 }

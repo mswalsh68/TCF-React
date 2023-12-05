@@ -1,9 +1,7 @@
 import React from 'react'
-import './App.css'
-import DistributorData from './DistributorData'
-import Distributors from './Distributors'
-import Contact from './Contact'
-import Footer from './Footer'
+import '../App.css'
+import DistributorData from '../Data/DistributorData'
+import Distributors from '../Components/Distributors'
 
 export default function Home() {
 
@@ -18,7 +16,7 @@ export default function Home() {
     <div>
       
       <div className="sectionSplit">
-        <h2><b>Our Manufacturers</b></h2>
+        <h2><b>Distribution Partners</b></h2>
     </div>
 
     <div className="wrapper">
@@ -26,8 +24,6 @@ export default function Home() {
     </div>
     
 
-    <Contact />
-    <Footer />
 
     </div>
   )

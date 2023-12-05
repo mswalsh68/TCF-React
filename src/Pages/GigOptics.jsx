@@ -1,9 +1,7 @@
 import React from 'react'
-import './App.css'
-import Contact from './Contact'
-import Footer from './Footer'
-import GigData from './GigData';
-import Card from './Card'
+import '../App.css'
+import GigData from '../Data/GigData';
+import Card from '../Components/Card'
 
 
 export default function GigOptics() {
@@ -25,8 +23,7 @@ export default function GigOptics() {
           {featuredProducts}
         </div>
 
-        <Contact />
-        <Footer />
+      
     </div>
   )
 }

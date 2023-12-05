@@ -1,7 +1,7 @@
-import SFP from '../public/images/SFP-optical-transceivers.png'
-import AOC from '../public/images/AOC-cables.png'
-import DAC from '../public/images/DAC-Cables.png'
-import BLOG from '../public/images/gig optics blog.png'
+import SFP from '../images/SFP-optical-transceivers.png'
+import AOC from '../images/AOC-cables.png'
+import DAC from '../images/DAC-Cables.png'
+import BLOG from '../images/gig optics blog.png'
 
 export default[
     {

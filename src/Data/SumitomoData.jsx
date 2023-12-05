@@ -1,7 +1,7 @@
-import Q102CA from '../public/images/Sumitomo Q102 CA.png'
-import Q502S from '../public/images/Sumitomo Q502SS.png'
-import LynxCustomFit from '../public/images/Lynx-Customfit-Splice-On-Connector-2.png'
-import Cleaver from '../public/images/Sumitomo FC-8R Cleaver.png'
+import Q102CA from '../images/Sumitomo Q102 CA.png'
+import Q502S from '../images/Sumitomo Q502SS.png'
+import LynxCustomFit from '../images/Lynx-Customfit-Splice-On-Connector-2.png'
+import Cleaver from '../images/Sumitomo FC-8R Cleaver.png'
 
 export default[
     {

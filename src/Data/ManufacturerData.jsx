@@ -1,7 +1,7 @@
-import OCCLogo from '../public/images/occ LOGO.png'
-import SumitomoLogo from '../public/images/Sumitomo Logo.png'
-import TrendLogo from '../public/images/TREND-NETWORKS-logo_2.png'
-import GigLogo from '../public/images/gig optics.png'
+import OCCLogo from '../images/occ LOGO.png'
+import SumitomoLogo from '../images/Sumitomo Logo.png'
+import TrendLogo from '../images/TREND-NETWORKS-logo_2.png'
+import GigLogo from '../images/gig optics.png'
 
 
 

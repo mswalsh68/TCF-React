@@ -1,10 +1,10 @@
-import DXcable from '../public/images/OCC DX-Series_Plenum-copy-768x515.jpg'
-import FiberZDE from '../public/images/OCC Zone-Distribution-Enclosure.jpg'
-import MDIS from '../public/images/OCC mdis.png'
-import XPress from '../public/images/OCC Express.jpg'
-import Slimline from '../public/images/OCC slimline.png'
-import RJACK from '../public/images/OCC Industrial RJ 45.jpg'
-import MARS from '../public/images/OCC MARS.png'
+import DXcable from '../images/OCC DX-Series_Plenum-copy-768x515.jpg'
+import FiberZDE from '../images/OCC Zone-Distribution-Enclosure.jpg'
+import MDIS from '../images/OCC mdis.png'
+import XPress from '../images/OCC Express.jpg'
+import Slimline from '../images/OCC slimline.png'
+import RJACK from '../images/OCC Industrial RJ 45.jpg'
+import MARS from '../images/OCC MARS.png'
 
 export default[
     {

@@ -1,18 +1,20 @@
 import React from 'react'
 import './App.css'
 import {Routes, Route, Link} from 'react-router-dom'
-import Home from './Home'
-import WhereToBuy from './WhereToBuy'
-import About from './About'
-import MarketsServed from './MarketsServed'
+import Home from './Pages/Home'
+import WhereToBuy from './Pages/WhereToBuy'
+import About from './Pages/About'
+import MarketsServed from './Pages/MarketsServed'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import OCC from './OCC'
-import Sumitomo from './Sumitomo'
-import TrendNetworks from './TrendNetworks'
-import GigOptics from './GigOptics'
-import TCFlogo from '../public/images/TCF-MainLogo.png'
+import OCC from './Pages/OCC'
+import Sumitomo from './Pages/Sumitomo'
+import TrendNetworks from './Pages/TrendNetworks'
+import GigOptics from './Pages/GigOptics'
+import TCFlogo from './images/TCF-MainLogo.png'
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
-import ThankYou from './ThankYou'
+import ThankYou from './Pages/ThankYou'
+import Footer from './Components/Footer'
+import Contact from './Components/Contact'
 
 export default function App() {
   return (
@@ -92,7 +94,8 @@ export default function App() {
             <Route path='/ThankYOu' element={<ThankYou />} />
         </Routes>
 
-
+        <Contact />
+        <Footer />
   </div>
   )
 }

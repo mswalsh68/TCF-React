@@ -1,8 +1,8 @@
-import LANTEK from '../public/images/Trend lantek-iv.png'
-import FIBERMASTER from '../public/images/Trend fibermaster-new.png'
-import SIGNALTEK from '../public/images/Trend SIGNALTEK-NT.png'
-import POEtester from '../public/images/Trend POE new.png'
-import TRENDANYWARE from '../public/images/Trend anywhere.png'
+import LANTEK from '../images/Trend lantek-iv.png'
+import FIBERMASTER from '../images/Trend fibermaster-new.png'
+import SIGNALTEK from '../images/Trend SIGNALTEK-NT.png'
+import POEtester from '../images/Trend POE new.png'
+import TRENDANYWARE from '../images/Trend anywhere.png'
 
 export default[
     {

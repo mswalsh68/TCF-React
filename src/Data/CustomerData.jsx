@@ -1,8 +1,8 @@
-import DisneyLogo from '../public/images/Disney.jpg'
-import USFLogo from '../public/images/USF.jpg'
-import GOOALogo from '../public/images/MCO.png'
-import FDOTLogo from '../public/images/fdot-logo.png'
-import NASALogo from '../public/images/nasa-logo.png'
+import DisneyLogo from '../images/Disney.jpg'
+import USFLogo from '../images/USF.jpg'
+import GOOALogo from '../images/MCO.png'
+import FDOTLogo from '../images/fdot-logo.png'
+import NASALogo from '../images/nasa-logo.png'
 
 
 

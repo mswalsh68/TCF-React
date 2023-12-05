@@ -1,7 +1,5 @@
 import React from 'react'
-import Footer from './Footer'
-import Contact from './Contact'
-import './App.css'
+import '../App.css'
 
 
 
@@ -29,8 +27,6 @@ export default function About() {
 
     </div>
 
-    <Contact />
-    <Footer />
 
     </div>
   )

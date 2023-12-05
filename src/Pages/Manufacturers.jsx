@@ -1,6 +1,6 @@
 import React from 'react'
 import {Routes, Route, Link} from 'react-router-dom'
-import './App.css'
+import '../App.css'
 import OCC from './OCC'
 import Sumitomo from './Sumitomo'
 import TrendNetworks from './TrendNetworks'
