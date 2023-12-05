@@ -6,7 +6,7 @@ export default function ThankYou() {
     <div>
 
         <div className="sectionSplit">
-                <h2><b>Contact Us</b></h2>
+                <h2><b>Thank You</b></h2>
         </div>
 
         <p className='wrapper'>Thank you for contacting us. Someone will be in touch with you shortly</p>
