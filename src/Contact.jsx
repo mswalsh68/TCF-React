@@ -1,14 +1,17 @@
 import React, {useRef} from 'react'
 import './App.css'
 import emailjs from '@emailjs/browser';
-import {Routes, Route, Link} from 'react-router-dom'
-import ThankYou from './ThankYou';
+import {useNavigate} from 'react-router-dom'
+
 
 export default function Contact() {
 
     const form = useRef();
 
+    const navigate = useNavigate();
+
     function handleSubmit(e){
+        navigate('/ThankYou')
         e.preventDefault();
  
     emailjs.sendForm('service_g4yvyhs', 'template_7xqk5y2', form.current, '-5EntjEEuC2PrJWO4')
@@ -56,13 +59,10 @@ export default function Contact() {
             </div>
 
             <button type="submit" value="Send" className='send'>Submit
-                <Link to='/ThankYou'></Link>
             </button>       
         </form>
 
-        <Routes>
-            <Route path='/' element={<ThankYou />} />
-        </Routes>
+       
     </div>   
     )
 }

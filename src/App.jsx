@@ -12,6 +12,7 @@ import TrendNetworks from './TrendNetworks'
 import GigOptics from './GigOptics'
 import TCFlogo from '../public/images/TCF-MainLogo.png'
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
+import ThankYou from './ThankYou'
 
 export default function App() {
   return (
@@ -88,6 +89,7 @@ export default function App() {
             <Route path='/Sumitomo' element={<Sumitomo />} />
             <Route path='/TrendNetworks' element={<TrendNetworks />} />
             <Route path='/GigOptics' element={<GigOptics />} />
+            <Route path='/ThankYOu' element={<ThankYou />} />
         </Routes>
 
 
